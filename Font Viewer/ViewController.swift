@@ -13,29 +13,25 @@ class ViewController: NSViewController {
     // MARK: - IBOutlet Properties
     
     @IBOutlet weak var fontFamiliesPopup: NSPopUpButton!
-    
     @IBOutlet weak var fontTypesPopup: NSPopUpButton!
-    
     @IBOutlet weak var sampleLabel: NSTextField!
     
     
     // MARK: - Properties
-    
     var selectedFontFamily: String?
-    
     var fontFamilyMembers = [[Any]]()
     
     
     
     // MARK: - Default Methods
-    
+//-------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    
+    //-------------------------
     override func viewWillAppear() {
         super.viewWillAppear()
         
@@ -43,7 +39,7 @@ class ViewController: NSViewController {
         populateFontFamilies()
     }
     
-    
+ //-------------------------
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
